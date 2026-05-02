@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback - PeeKey Institute</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">Pee<span>Key</span></a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#courses">Courses</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#vision">Vision</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+  <a class="nav-cta" href="register.html">Enroll Now</a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="index.html#courses" onclick="closeMenu()">Courses</a>
+  <a href="index.html#about" onclick="closeMenu()">About</a>
+  <a href="index.html#vision" onclick="closeMenu()">Vision</a>
+  <a href="feedback.html" onclick="closeMenu()">Feedback</a>
+</div>
+
+<section class="page-top">
+  <div class="section-label">Student Stories</div>
+  <h2 class="section-title">What Parents & Students Say</h2>
+  <p class="section-sub">Real feedback from our community.</p>
+  <div class="testimonials" id="testimonialsGrid"></div>
+
+  <div class="feedback-form">
+    <div style="font-weight:600; font-size:1.1rem; color:var(--text); margin-bottom:1.2rem; font-family:'Playfair Display',serif;">Share Your Feedback</div>
+    <div class="form-row">
+      <div class="form-group"><label>Your Name</label><input type="text" id="fbName" placeholder="Name"></div>
+      <div class="form-group"><label>Role</label>
+        <select id="fbRole"><option>Parent</option><option>Student</option><option>Alumni</option></select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Rating</label>
+      <div class="rating-wrap">
+        <button class="star-btn" onclick="setRating(1)">★</button>
+        <button class="star-btn" onclick="setRating(2)">★</button>
+        <button class="star-btn" onclick="setRating(3)">★</button>
+        <button class="star-btn" onclick="setRating(4)">★</button>
+        <button class="star-btn" onclick="setRating(5)">★</button>
+      </div>
+    </div>
+
+    <div class="form-group"><label>Your Message</label><textarea id="fbMsg" placeholder="Share your experience..."></textarea></div>
+    <button class="submit-btn" onclick="submitFeedback()">Submit Feedback</button>
+    <div id="fbSuccess" style="display:none; margin-top:1rem; color:var(--accent); font-weight:600;">✅ Thank you! Your feedback has been recorded.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-logo">EduNest Institute</div>
+  <div class="foot-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#courses">Courses</a>
+    <a href="register.html">Enroll</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+  <div class="foot-copy">© 2026 EduNest. All rights reserved.</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/config.js"></script>
+<script src="js/feedback.js"></script>
+</body>
+</html>
