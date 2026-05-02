@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PeeKey Institute</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">Pee<span>Key</span></a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#courses">Courses</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#vision">Vision</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+  <a class="nav-cta" href="register.html">Enroll Now</a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="index.html#courses" onclick="closeMenu()">Courses</a>
+  <a href="index.html#about" onclick="closeMenu()">About</a>
+  <a href="index.html#vision" onclick="closeMenu()">Vision</a>
+  <a href="feedback.html" onclick="closeMenu()">Feedback</a>
+</div>
+
+<section id="home">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-badge">Offline Learning · Local Students</div>
+      <h1>Where Local <em>Talent</em> Finds Its True Potential</h1>
+      <p class="hero-sub">PeeKey is your neighbourhood teaching institute — bringing quality education to every student, right here in your community.</p>
+      <div class="hero-btns">
+        <a href="register.html" class="btn-primary">Start Enrolling</a>
+        <a href="#courses" class="btn-outline">View Courses</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-num">1000+</div><div class="stat-label">Students</div></div>
+        <div class="stat"><div class="stat-num">18</div><div class="stat-label">Courses</div></div>
+        <div class="stat"><div class="stat-num">12</div><div class="stat-label">Teachers</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="course-preview">
+        <div style="font-size:0.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.1em;">Live Courses</div>
+        <div class="cp-item"><div class="cp-icon">💻</div><div><div class="cp-title">Web Development</div><div class="cp-tag">Tue, Thu · 5:00 PM</div></div><span class="cp-badge badge-open">Open</span></div>
+        <div class="cp-item"><div class="cp-icon">📖</div><div><div class="cp-title">Data Entry</div><div class="cp-tag">Daily · 3:30 PM</div></div><span class="cp-badge badge-full">Full</span></div>
+      </div>  
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="courses">
+  <div class="section-label">What We Teach</div>
+  <h2 class="section-title">Our Courses</h2>
+  <p class="section-sub">Carefully designed courses for Class 6–12 students, taught by experienced local educators.</p>
+  <div class="courses-grid" id="coursesGrid"></div>
+</section>
+
+<hr class="divider">
+
+<section id="about">
+  <div class="about-grid">
+    <div>
+      <div class="section-label">Who We Are</div>
+      <h2 class="section-title">About PeeKey</h2>
+      <p class="section-sub">Founded in 2018, PeeKey is a dedicated offline coaching institute serving local students.</p>
+      <div class="about-quote">
+        <div class="quote-text">"Our classroom is our sacred space — no notifications, no distractions, only learning that changes lives."</div>
+        <div class="quote-author">— Founder & Head Educator</div>
+      </div>
+    </div>
+    <div class="about-features">
+      <div class="af-item"><div class="af-dot">🏫</div><div><div class="af-title">Offline-First Learning</div><div class="af-desc">Students engage deeply without screen fatigue or internet dependency.</div></div></div>
+      <div class="af-item"><div class="af-dot">👩‍🏫</div><div><div class="af-title">Expert Local Teachers</div><div class="af-desc">Experienced educators who understand local student needs.</div></div></div>
+      <div class="af-item"><div class="af-dot">📋</div><div><div class="af-title">Small Batch Sizes</div><div class="af-desc">Every child gets individual attention and personal guidance.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="vision">
+  <div class="section-label">Our Dream</div>
+  <h2 class="section-title">Vision & Mission</h2>
+  <p class="section-sub">We are building a future where every local student has access to quality education right in their neighbourhood.</p>
+  <div class="vision-cards">
+    <div class="vision-card"><div class="vc-num">01</div><div class="vc-icon">🌱</div><div class="vc-title">Nurture Every Learner</div><div class="vc-desc">Teaching adapts to individual pace and strength.</div></div>
+    <div class="vision-card"><div class="vc-num">02</div><div class="vc-icon">🤝</div><div class="vc-title">Community-Rooted Education</div><div class="vc-desc">Families, teachers, and students grow together.</div></div>
+    <div class="vision-card"><div class="vc-num">03</div><div class="vc-icon">🏆</div><div class="vc-title">Excellence in Results</div><div class="vc-desc">We train students to think, solve, and excel.</div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-logo">PeeKey Institute</div>
+  <div class="foot-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#courses">Courses</a>
+    <a href="register.html">Enroll</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+  <div class="foot-copy">© 2026 PeeKey. All rights reserved.</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
