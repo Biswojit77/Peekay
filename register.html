@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - PeeKey Institute</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">Pee<span>Key</span></a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#courses">Courses</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#vision">Vision</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+  <a class="nav-cta" href="register.html">Enroll Now</a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="index.html#courses" onclick="closeMenu()">Courses</a>
+  <a href="index.html#about" onclick="closeMenu()">About</a>
+  <a href="index.html#vision" onclick="closeMenu()">Vision</a>
+  <a href="feedback.html" onclick="closeMenu()">Feedback</a>
+</div>
+
+<section class="page-top">
+  <div class="section-label">Join Us</div>
+  <h2 class="section-title">Student Registration</h2>
+  <p class="section-sub">Fill in the form below and our team will contact you within 24 hours.</p>
+
+  <div class="enroll-wrap">
+    <div>
+      <div class="info-step"><div class="step-num">1</div><div class="step-text"><strong>Fill the Form</strong>Provide student and parent details.</div></div>
+      <div class="info-step"><div class="step-num">2</div><div class="step-text"><strong>We Call You</strong>We confirm course and batch availability.</div></div>
+      <div class="info-step"><div class="step-num">3</div><div class="step-text"><strong>Confirm Seat</strong>Visit institute or pay to lock your seat.</div></div>
+    </div>
+
+    <div class="form-card">
+      <div id="enrollFormFields">
+        <div class="form-row">
+          <div class="form-group"><label>Student Name *</label><input type="text" id="sName" placeholder="Full name"></div>
+          <div class="form-group"><label>Class / Grade *</label>
+            <select id="sGrade">
+              <option value="">Select Grade</option>
+              <option>Class 6</option><option>Class 7</option><option>Class 8</option>
+              <option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group"><label>Parent Name *</label><input type="text" id="pName" placeholder="Father / Mother name"></div>
+          <div class="form-group"><label>Mobile Number *</label><input type="tel" id="pPhone" placeholder="10-digit number" maxlength="10"></div>
+        </div>
+
+        <div class="form-group"><label>Course Interested In *</label>
+          <select id="sCourse">
+            <option value="">Select Course</option>
+            <option>Mathematics</option>
+            <option>Science</option>
+            <option>English Grammar</option>
+            <option>Computer Basics</option>
+            <option>Social Studies</option>
+            <option>Full Package</option>
+          </select>
+        </div>
+
+        <div class="form-group"><label>Preferred Batch Time</label>
+          <select id="sBatch">
+            <option value="">Select Preference</option>
+            <option>Morning (7:00 AM – 9:00 AM)</option>
+            <option>Afternoon (2:00 PM – 4:00 PM)</option>
+            <option>Evening (4:00 PM – 6:30 PM)</option>
+          </select>
+        </div>
+
+        <div class="form-group"><label>Message / Special Request</label><textarea id="sMsg" placeholder="Any notes or questions?"></textarea></div>
+        <button class="submit-btn" onclick="submitEnroll()">Submit Enrollment Request</button>
+      </div>
+
+      <div class="success-msg" id="successMsg">
+        <div style="font-size:2.5rem;">✅</div>
+        <p>Enrollment Submitted Successfully!</p>
+        <p class="small-note">We'll call you within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-logo">EduNest Institute</div>
+  <div class="foot-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#courses">Courses</a>
+    <a href="register.html">Enroll</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+  <div class="foot-copy">© 2026 EduNest. All rights reserved.</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/config.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>
